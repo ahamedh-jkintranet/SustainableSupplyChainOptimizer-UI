@@ -41,7 +41,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           app_location: "/"  # The root of your Angular app
-          output_location: "dist/sustainable-supply-chain-optimizer/src"  # Specify the folder name created after build
+          output_location: "dist/sustainable-supply-chain-optimizer/browser"  # Specify the folder name created after build
           api_location: ""  # Leave blank if you don’t have an API
 
       - name: Build And Deploy
