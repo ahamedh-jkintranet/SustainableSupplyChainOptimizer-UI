@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+// Angular Import
+import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'SustainableSupplyChainOptimizer';
+export class AppComponent implements OnInit {
+  // constructor
+  constructor(private router: Router) {}
+
+  // life cycle event
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
+  }
 }
