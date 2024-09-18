@@ -1,16 +1,12 @@
 {
   "name": "sustainable-supply-chain-optimizer",
-  "version": "4.1.0",
-  "author": "CodedThemes",
+  "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host=127.0.0.1",
     "build": "ng build",
-    "build-prod": "ng build --configuration production --base-href /demos/admin-templates/gradient-able/angular/free/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "lint": "ng lint",
-    "lint-fix": "ng lint --fix"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
