@@ -1,1 +1,67 @@
-<p>dashboard-home works!</p>
+<div class="row justify-content-end">
+</div>
+<div class="card mt-4">
+    <div class="card-body">
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <!-- <h6>Carbon Footprint analysis by Stacked Bar Chart</h6> -->
+            </div>
+            <div class="col-6">
+               
+                <!-- <ngx-gauge [size]="250" 
+                type="arch" 
+                [thick]="10" 
+                [value]="carbonEmission" 
+                cap="butt" 
+                label="Carbon Emission" 
+                append="%"
+                [markers]="markerConfig"
+                [thresholds]="thresholdConfig">
+                </ngx-gauge> -->
+            </div>
+        </div>
+ 
+    </div>
+</div>
+ 
+<div class="card">
+    <div class="card-body">
+        <div class="row mt-4">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <!-- <h6>Trend Line of Carbon Emission</h6> -->
+                    </div>
+                    <div class="col">
+                       <!-- start-->
+                       <apx-chart
+                       [dataLabels]="line1CAC.dataLabels!"
+                       [chart]="line1CAC.chart!"
+                       [stroke]="line1CAC.stroke!"
+                       [colors]="line1CAC.colors!"
+                       [series]="line1CAC.series!"
+                       [title]="line1CAC.title!"
+                       [grid]="line1CAC.grid!"
+                       [xaxis]="line1CAC.xaxis!"
+                     ></apx-chart>
+                      <!-- end -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <apx-chart
+                [dataLabels]="bar1CAC.dataLabels!"
+                [chart]="bar1CAC.chart!"
+                [plotOptions]="bar1CAC.plotOptions!"
+                [stroke]="bar1CAC.stroke!"
+                [colors]="bar1CAC.colors!"
+                [series]="bar1CAC.series!"
+                [tooltip]="bar1CAC.tooltip!"
+                [xaxis]="bar1CAC.xaxis!"
+                [yaxis]="bar1CAC.yaxis!"
+                [fill]="bar1CAC.fill!"
+              ></apx-chart>
+            </div>
+        </div>
+    </div>
+</div>
