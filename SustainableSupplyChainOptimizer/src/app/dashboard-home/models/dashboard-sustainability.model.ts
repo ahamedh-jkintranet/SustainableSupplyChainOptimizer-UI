@@ -1,3 +1,3 @@
 export interface DashboardSustainability {
-    goalNumber: number;
+  goalProgress: number;
   }

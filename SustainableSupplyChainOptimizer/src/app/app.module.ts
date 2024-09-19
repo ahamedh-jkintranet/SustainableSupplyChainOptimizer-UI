@@ -28,6 +28,7 @@ import { DashboardHomeComponent } from './dashboard-home/dashboard-home.componen
 import { provideHttpClient } from '@angular/common/http';
 import { CsvParserService } from './services/csv-parser.service';
 import { AiRecommendationService } from './services/ai-recommendation.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { AiRecommendationService } from './services/ai-recommendation.service';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     DashboardHomeComponent,
+    NgbModule
   ],
   providers: [provideHttpClient(),CsvParserService, AiRecommendationService],
   bootstrap: [AppComponent]
