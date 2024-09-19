@@ -1,6 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { NgxGaugeModule } from 'ngx-gauge';
-import { NgxGaugeType } from 'ngx-gauge/gauge/gauge';
+// import { NgxGaugeModule } from 'ngx-gauge';
+// import { NgxGaugeType } from 'ngx-gauge/gauge/gauge';
 import { DashboardService } from './dashboard.service';
 import { DashboardHome } from './models/dashboard-home.model';
 import { HttpClient } from '@angular/common/http';
@@ -11,7 +11,7 @@ import { ApexOptions, NgApexchartsModule } from 'ng-apexcharts';
 @Component({
   selector: 'app-dashboard-home',
   standalone: true,
-  imports: [NgxGaugeModule, NgApexchartsModule],
+  imports: [NgApexchartsModule],
   templateUrl: './dashboard-home.component.html',
   styleUrl: './dashboard-home.component.scss',
 })
