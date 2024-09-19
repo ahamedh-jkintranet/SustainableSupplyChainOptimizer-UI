@@ -26,6 +26,7 @@ import { SharedModule } from './theme/shared/shared.module';
 // import { NgxGaugeModule } from 'ngx-gauge';
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
 import { provideHttpClient } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { provideHttpClient } from '@angular/common/http';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     DashboardHomeComponent,
+    NgbModule
   ],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent],

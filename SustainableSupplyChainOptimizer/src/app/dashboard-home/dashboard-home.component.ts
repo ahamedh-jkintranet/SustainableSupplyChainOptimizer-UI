@@ -7,17 +7,21 @@ import { HttpClient } from '@angular/common/http';
 import { SharedModule } from 'src/app/theme/shared/shared.module';
 import { ChartDB } from 'src/app/fack-db/chartData';
 import { ApexOptions, NgApexchartsModule } from 'ng-apexcharts';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DashboardSustainability } from './models/dashboard-sustainability.model';
 
 @Component({
   selector: 'app-dashboard-home',
   standalone: true,
-  imports: [NgApexchartsModule],
+  imports: [NgApexchartsModule,NgbModule],
   templateUrl: './dashboard-home.component.html',
   styleUrl: './dashboard-home.component.scss',
 })
+
 export class DashboardHomeComponent {
   profiles: DashboardHome[] = [];
   carbonEmission: number = 0;
+  sustainabilityGoalProgress : number = 0;
 
   line1CAC!: ApexOptions;
   bar1CAC!: ApexOptions;
@@ -39,6 +43,13 @@ export class DashboardHomeComponent {
     //   error => console.error('Error fetching dashboard profiles:', error)
     // );
 
+    this.dashboardService.getDashboardSustainabilityChart().subscribe(
+      (data: number) => {
+          this.sustainabilityGoalProgress = data;  // Directly assign the value
+      },
+      (error) => console.error('Error fetching dashboard profiles:', error),
+  );
+
     // TrendLine of Carbon Emission & Cost Analysis Chart : 1 API : GetDashboardDataList
 
     this.dashboardService.getDashboardProfile().subscribe(
@@ -56,7 +67,7 @@ export class DashboardHomeComponent {
             categories: this.profiles.map((s) => s.firstMonth),
           };
 
-          /////////////////////////////////
+
           this.bar1CAC.series = [
             {
               name: 'Cost',
@@ -101,7 +112,7 @@ export class DashboardHomeComponent {
       },
       grid: {
         row: {
-          colors: ['#f3f6ff', 'transparent'], // takes an array which will be repeated on columns
+          colors: ['#f3f6ff', 'transparent'], 
           opacity: 0.5,
         },
       },
@@ -192,4 +203,6 @@ export class DashboardHomeComponent {
     { value: 85, color: '#555', size: 4, type: 'line' },
     { value: 100, color: '#555', size: 8, label: '100', type: 'line' },
   ];
+
+  
 }
