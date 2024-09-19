@@ -23,7 +23,7 @@ import { NavCollapseComponent } from './theme/layout/admin/navigation/nav-conten
 import { NavGroupComponent } from './theme/layout/admin/navigation/nav-content/nav-group/nav-group.component';
 import { NavItemComponent } from './theme/layout/admin/navigation/nav-content/nav-item/nav-item.component';
 import { SharedModule } from './theme/shared/shared.module';
-import { NgxGaugeModule } from 'ngx-gauge';
+// import { NgxGaugeModule } from 'ngx-gauge';
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
 import { provideHttpClient } from '@angular/common/http';
 import { CsvParserService } from './services/csv-parser.service';

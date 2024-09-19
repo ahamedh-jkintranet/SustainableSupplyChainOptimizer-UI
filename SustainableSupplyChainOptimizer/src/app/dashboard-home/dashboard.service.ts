@@ -10,13 +10,13 @@ import { HttpClient } from '@angular/common/http';
 export class DashboardService {
 
   //Local
-  private apiUrl = 'https://localhost:44367/GetDashboardChartDataList';
-  private carbonEmissionApiUrl = 'https://localhost:44367/GetAverageCarbonEmission';
-  private sustainabilityApiUrl = 'https://localhost:44367/GetAverageCarbonEmission/GetSustainabilityGoalProgress';
+  //private apiUrl = 'https://localhost:44367/GetDashboardChartDataList';
+  //private carbonEmissionApiUrl = 'https://localhost:44367/GetAverageCarbonEmission';
+  //private sustainabilityApiUrl = 'https://localhost:44367/GetAverageCarbonEmission/GetSustainabilityGoalProgress';
 
-  // private apiUrl ='https://demoapi-dyfcgegfcafjaph7.southeastasia-01.azurewebsites.net/GetDashboardDataList';
-  // private carbonEmissionApiUrl = 'https://demoapi-dyfcgegfcafjaph7.southeastasia-01.azurewebsites.net/GetAverageCarbonEmission';
-  // private sustainabilityApiUrl = 'https://demoapi-dyfcgegfcafjaph7.southeastasia-01.azurewebsites.net/GetSustainabilityGoalProgress';
+   private apiUrl ='https://demoapi-dyfcgegfcafjaph7.southeastasia-01.azurewebsites.net/GetDashboardDataList';
+   private carbonEmissionApiUrl = 'https://demoapi-dyfcgegfcafjaph7.southeastasia-01.azurewebsites.net/GetAverageCarbonEmission';
+   private sustainabilityApiUrl = 'https://demoapi-dyfcgegfcafjaph7.southeastasia-01.azurewebsites.net/GetSustainabilityGoalProgress';
 
   constructor(private http: HttpClient) {}
 

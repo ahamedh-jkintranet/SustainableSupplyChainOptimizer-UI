@@ -31,7 +31,6 @@
     "mousetrap": "^1.6.5",
     "ng-apexcharts": "^1.11.0",
     "ngx-color-picker": "^16.0.0",
-    "ngx-gauge": "^9.0.0",
     "ngx-scrollbar": "^15.0.1",
     "papaparse": "^5.4.1",
     "rxjs": "~7.8.1",
