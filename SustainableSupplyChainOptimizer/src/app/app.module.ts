@@ -23,6 +23,9 @@ import { NavCollapseComponent } from './theme/layout/admin/navigation/nav-conten
 import { NavGroupComponent } from './theme/layout/admin/navigation/nav-content/nav-group/nav-group.component';
 import { NavItemComponent } from './theme/layout/admin/navigation/nav-content/nav-item/nav-item.component';
 import { SharedModule } from './theme/shared/shared.module';
+import { NgxGaugeModule } from 'ngx-gauge';
+import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
+import { provideHttpClient } from '@angular/common/http';
 import { CsvParserService } from './services/csv-parser.service';
 import { AiRecommendationService } from './services/ai-recommendation.service';
 
@@ -43,10 +46,18 @@ import { AiRecommendationService } from './services/ai-recommendation.service';
     NavContentComponent,
     NavItemComponent,
     NavCollapseComponent,
-    NavGroupComponent
+    NavGroupComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule],
-  providers: [CsvParserService, AiRecommendationService],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    DashboardHomeComponent,
+  ],
+  providers: [provideHttpClient(),CsvParserService, AiRecommendationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
