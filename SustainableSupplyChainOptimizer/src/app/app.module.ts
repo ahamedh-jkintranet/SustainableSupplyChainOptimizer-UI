@@ -23,6 +23,8 @@ import { NavCollapseComponent } from './theme/layout/admin/navigation/nav-conten
 import { NavGroupComponent } from './theme/layout/admin/navigation/nav-content/nav-group/nav-group.component';
 import { NavItemComponent } from './theme/layout/admin/navigation/nav-content/nav-item/nav-item.component';
 import { SharedModule } from './theme/shared/shared.module';
+import { CsvParserService } from './services/csv-parser.service';
+import { AiRecommendationService } from './services/ai-recommendation.service';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,7 @@ import { SharedModule } from './theme/shared/shared.module';
     NavGroupComponent
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule],
-  providers: [],
+  providers: [CsvParserService, AiRecommendationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -9,6 +9,8 @@ import { CardComponent } from './components/card/card.component';
 import { DataFilterPipe } from './filter/data-filter.pipe';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 // third party
 import { NgScrollbarModule } from 'ngx-scrollbar';
 import 'hammerjs';
@@ -27,7 +29,8 @@ import { NgbDropdownModule, NgbNavModule, NgbModule } from '@ng-bootstrap/ng-boo
     NgbDropdownModule,
     NgbNavModule,
     NgbModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    HttpClientModule
   ],
   exports: [
     CommonModule,
@@ -40,7 +43,8 @@ import { NgbDropdownModule, NgbNavModule, NgbModule } from '@ng-bootstrap/ng-boo
     NgbModule,
     NgbDropdownModule,
     NgbNavModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    HttpClientModule
   ],
   declarations: [DataFilterPipe, SpinnerComponent]
 })

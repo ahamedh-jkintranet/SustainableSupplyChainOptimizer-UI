@@ -1,0 +1,251 @@
+Recommendation_ID,Recommendation,Estimated_Emission_Reduction,Estimated_Cost_Savings,Implementation_Timeframe,Priority_Level
+R-001,Switch to biofuel for ocean freight,139.07,12944.61,11,Low
+R-002,Enhance driver training programs for fuel efficiency,241.37,7118.69,10,Low
+R-003,Partner with suppliers closer to manufacturing sites,482.78,8686.78,4,Low
+R-004,Partner with suppliers closer to manufacturing sites,408.24,19150.98,4,Medium
+R-005,Adopt just-in-time inventory to reduce storage needs,198.34,11358.76,1,High
+R-006,Adopt just-in-time inventory to reduce storage needs,341.66,10986.74,1,Medium
+R-007,Partner with suppliers closer to manufacturing sites,418.99,18101.06,7,Low
+R-008,Implement renewable energy sources in warehouses,221.33,10952.29,7,High
+R-009,Implement telematics for fleet management,342.56,9374.08,9,Low
+R-010,Increase load capacity utilization,398.86,11138.27,9,Low
+R-011,Partner with suppliers closer to manufacturing sites,153.21,10523.57,6,Low
+R-012,Use electric vehicles for short-haul deliveries,428.33,7224.62,8,Medium
+R-013,Implement telematics for fleet management,305.03,14403.9,5,High
+R-014,Use electric vehicles for short-haul deliveries,449.92,15160.97,2,High
+R-015,Enhance driver training programs for fuel efficiency,250.68,5922.28,11,Low
+R-016,Switch to biofuel for ocean freight,362.98,10039.4,9,High
+R-017,Use electric vehicles for short-haul deliveries,452.16,5571.66,5,Low
+R-018,Partner with suppliers closer to manufacturing sites,412.76,8841.0,11,Medium
+R-019,Use electric vehicles for short-haul deliveries,324.6,19362.4,11,Low
+R-020,Switch to biofuel for ocean freight,148.18,7018.8,4,High
+R-021,Implement telematics for fleet management,308.59,15344.86,4,Medium
+R-022,Increase load capacity utilization,376.04,18846.89,10,Medium
+R-023,Switch to biofuel for ocean freight,444.58,19312.43,4,Medium
+R-024,Use electric vehicles for short-haul deliveries,407.37,15269.94,3,Medium
+R-025,Upgrade warehouse lighting to LED systems,187.57,18392.67,9,Low
+R-026,Increase load capacity utilization,423.25,5782.02,8,High
+R-027,Enhance driver training programs for fuel efficiency,428.74,15573.67,7,Low
+R-028,Adopt just-in-time inventory to reduce storage needs,146.77,18781.15,10,High
+R-029,Use electric vehicles for short-haul deliveries,100.26,18464.44,2,High
+R-030,Implement renewable energy sources in warehouses,371.97,11802.73,2,Medium
+R-031,Upgrade warehouse lighting to LED systems,112.37,17752.23,4,High
+R-032,Increase load capacity utilization,172.66,16408.46,6,High
+R-033,Optimize trucking routes using AI algorithms,311.52,6429.32,8,High
+R-034,Use electric vehicles for short-haul deliveries,254.07,6097.87,6,Low
+R-035,Implement telematics for fleet management,259.66,17180.58,11,High
+R-036,Enhance driver training programs for fuel efficiency,218.46,10679.18,5,High
+R-037,Implement telematics for fleet management,188.97,19515.94,7,Medium
+R-038,Increase load capacity utilization,165.48,16865.33,11,Low
+R-039,Increase load capacity utilization,365.77,13378.05,3,High
+R-040,Adopt just-in-time inventory to reduce storage needs,432.93,19381.44,3,Low
+R-041,Implement renewable energy sources in warehouses,437.91,7729.98,11,Medium
+R-042,Optimize trucking routes using AI algorithms,281.13,18696.78,11,Medium
+R-043,Implement renewable energy sources in warehouses,117.57,5469.76,9,Low
+R-044,Increase load capacity utilization,493.03,11351.41,2,Low
+R-045,Switch to biofuel for ocean freight,259.43,16261.06,5,High
+R-046,Upgrade warehouse lighting to LED systems,351.8,19394.78,3,High
+R-047,Implement renewable energy sources in warehouses,132.01,12438.21,6,Medium
+R-048,Increase load capacity utilization,130.25,15062.36,9,Medium
+R-049,Enhance driver training programs for fuel efficiency,375.22,8213.49,3,Low
+R-050,Optimize trucking routes using AI algorithms,484.56,18434.18,8,Low
+R-051,Use electric vehicles for short-haul deliveries,366.94,18246.3,8,High
+R-052,Upgrade warehouse lighting to LED systems,108.39,8166.79,6,High
+R-053,Upgrade warehouse lighting to LED systems,467.11,18713.48,6,Low
+R-054,Use electric vehicles for short-haul deliveries,187.78,19621.37,10,Medium
+R-055,Increase load capacity utilization,496.92,11421.07,5,High
+R-056,Increase load capacity utilization,120.35,14539.19,6,Low
+R-057,Increase load capacity utilization,181.24,17266.62,11,High
+R-058,Upgrade warehouse lighting to LED systems,315.9,14009.75,3,High
+R-059,Implement telematics for fleet management,208.14,13882.33,2,High
+R-060,Upgrade warehouse lighting to LED systems,155.06,7503.94,9,High
+R-061,Use electric vehicles for short-haul deliveries,440.42,15694.59,8,Medium
+R-062,Increase load capacity utilization,445.78,17688.12,2,Low
+R-063,Partner with suppliers closer to manufacturing sites,399.03,12447.43,9,Low
+R-064,Use electric vehicles for short-haul deliveries,270.84,17016.22,10,Medium
+R-065,Partner with suppliers closer to manufacturing sites,140.19,10616.22,9,High
+R-066,Implement renewable energy sources in warehouses,222.36,16228.91,11,High
+R-067,Increase load capacity utilization,111.17,8653.9,5,High
+R-068,Enhance driver training programs for fuel efficiency,359.11,9972.25,10,Medium
+R-069,Implement renewable energy sources in warehouses,389.72,17217.61,7,Medium
+R-070,Switch to biofuel for ocean freight,430.14,7319.64,9,Medium
+R-071,Optimize trucking routes using AI algorithms,448.11,16209.25,4,High
+R-072,Switch to biofuel for ocean freight,291.04,18634.92,9,Medium
+R-073,Switch to biofuel for ocean freight,286.91,6659.54,8,High
+R-074,Enhance driver training programs for fuel efficiency,377.02,9595.04,2,Medium
+R-075,Use electric vehicles for short-haul deliveries,453.91,16347.0,6,High
+R-076,Upgrade warehouse lighting to LED systems,414.92,6455.46,5,Low
+R-077,Enhance driver training programs for fuel efficiency,466.01,14603.4,11,High
+R-078,Use electric vehicles for short-haul deliveries,435.23,15557.12,9,High
+R-079,Partner with suppliers closer to manufacturing sites,131.34,9650.24,3,Medium
+R-080,Enhance driver training programs for fuel efficiency,370.35,6693.61,5,Medium
+R-081,Upgrade warehouse lighting to LED systems,398.66,12952.35,2,Low
+R-082,Increase load capacity utilization,263.71,17549.9,11,Low
+R-083,Implement renewable energy sources in warehouses,143.73,17078.55,2,Medium
+R-084,Implement renewable energy sources in warehouses,426.88,13249.27,10,Medium
+R-085,Switch to biofuel for ocean freight,471.57,16719.74,10,Low
+R-086,Optimize trucking routes using AI algorithms,376.85,14301.19,1,Low
+R-087,Optimize trucking routes using AI algorithms,165.43,14730.06,6,Low
+R-088,Switch to biofuel for ocean freight,307.35,9514.44,5,Low
+R-089,Upgrade warehouse lighting to LED systems,241.88,14430.61,8,Medium
+R-090,Switch to biofuel for ocean freight,157.6,6322.78,8,Medium
+R-091,Switch to biofuel for ocean freight,320.07,17112.11,3,Low
+R-092,Use electric vehicles for short-haul deliveries,461.73,5276.22,10,Medium
+R-093,Optimize trucking routes using AI algorithms,136.54,19575.14,9,High
+R-094,Implement telematics for fleet management,199.55,14529.53,8,Low
+R-095,Use electric vehicles for short-haul deliveries,228.24,10928.14,8,High
+R-096,Enhance driver training programs for fuel efficiency,411.75,16952.78,7,Medium
+R-097,Switch to biofuel for ocean freight,101.78,14740.28,9,Low
+R-098,Switch to biofuel for ocean freight,130.37,16350.58,3,Low
+R-099,Partner with suppliers closer to manufacturing sites,121.89,7526.02,9,Low
+R-100,Upgrade warehouse lighting to LED systems,325.52,12474.75,10,Medium
+R-101,Partner with suppliers closer to manufacturing sites,211.77,12145.98,8,Medium
+R-102,Switch to biofuel for ocean freight,132.71,18574.5,2,High
+R-103,Implement renewable energy sources in warehouses,377.11,13656.25,2,Low
+R-104,Implement telematics for fleet management,251.42,19824.42,10,Low
+R-105,Optimize trucking routes using AI algorithms,369.7,12661.7,11,Medium
+R-106,Adopt just-in-time inventory to reduce storage needs,133.39,17989.07,9,Low
+R-107,Partner with suppliers closer to manufacturing sites,304.83,18344.46,9,Low
+R-108,Partner with suppliers closer to manufacturing sites,169.15,12983.37,4,High
+R-109,Optimize trucking routes using AI algorithms,180.7,8052.59,1,High
+R-110,Enhance driver training programs for fuel efficiency,386.49,12498.06,7,Low
+R-111,Increase load capacity utilization,114.95,10674.84,3,Medium
+R-112,Partner with suppliers closer to manufacturing sites,441.1,18369.64,5,High
+R-113,Optimize trucking routes using AI algorithms,176.84,11928.77,7,High
+R-114,Adopt just-in-time inventory to reduce storage needs,369.6,16935.35,2,Medium
+R-115,Enhance driver training programs for fuel efficiency,177.51,9204.15,1,Medium
+R-116,Optimize trucking routes using AI algorithms,192.86,10388.64,6,Medium
+R-117,Optimize trucking routes using AI algorithms,304.81,8122.79,4,Low
+R-118,Upgrade warehouse lighting to LED systems,116.2,17199.69,2,Medium
+R-119,Adopt just-in-time inventory to reduce storage needs,189.31,15955.9,1,Medium
+R-120,Enhance driver training programs for fuel efficiency,309.24,9582.69,6,High
+R-121,Adopt just-in-time inventory to reduce storage needs,341.1,14097.68,11,High
+R-122,Partner with suppliers closer to manufacturing sites,316.1,7872.48,3,High
+R-123,Enhance driver training programs for fuel efficiency,106.83,16979.89,8,High
+R-124,Increase load capacity utilization,209.93,16337.19,9,High
+R-125,Implement renewable energy sources in warehouses,181.66,18964.32,9,Low
+R-126,Adopt just-in-time inventory to reduce storage needs,426.91,5564.66,2,Medium
+R-127,Upgrade warehouse lighting to LED systems,109.56,9141.1,8,Medium
+R-128,Partner with suppliers closer to manufacturing sites,478.35,14355.66,8,Medium
+R-129,Adopt just-in-time inventory to reduce storage needs,258.27,13354.11,9,High
+R-130,Increase load capacity utilization,460.01,15754.33,11,High
+R-131,Implement renewable energy sources in warehouses,420.49,7931.32,7,Low
+R-132,Upgrade warehouse lighting to LED systems,234.32,19129.96,11,Low
+R-133,Optimize trucking routes using AI algorithms,348.93,14185.24,5,Low
+R-134,Partner with suppliers closer to manufacturing sites,199.4,15232.0,1,Medium
+R-135,Enhance driver training programs for fuel efficiency,425.09,6065.44,4,Medium
+R-136,Enhance driver training programs for fuel efficiency,104.18,13772.71,2,Medium
+R-137,Switch to biofuel for ocean freight,115.28,14791.13,9,Medium
+R-138,Upgrade warehouse lighting to LED systems,162.13,6542.47,10,Medium
+R-139,Enhance driver training programs for fuel efficiency,295.46,8069.17,8,High
+R-140,Upgrade warehouse lighting to LED systems,235.99,18581.44,10,Medium
+R-141,Adopt just-in-time inventory to reduce storage needs,352.63,12206.61,11,High
+R-142,Implement telematics for fleet management,485.12,16430.75,1,Low
+R-143,Enhance driver training programs for fuel efficiency,351.43,10785.87,4,Low
+R-144,Switch to biofuel for ocean freight,288.3,6074.57,4,Medium
+R-145,Optimize trucking routes using AI algorithms,325.62,9284.21,9,Low
+R-146,Adopt just-in-time inventory to reduce storage needs,363.81,17223.98,11,Low
+R-147,Partner with suppliers closer to manufacturing sites,348.07,12527.8,7,Low
+R-148,Optimize trucking routes using AI algorithms,219.44,18768.89,1,Low
+R-149,Adopt just-in-time inventory to reduce storage needs,138.5,18327.79,4,Low
+R-150,Partner with suppliers closer to manufacturing sites,246.77,16325.9,10,Low
+R-151,Partner with suppliers closer to manufacturing sites,194.88,14216.43,4,Medium
+R-152,Implement renewable energy sources in warehouses,342.91,11637.62,7,Low
+R-153,Implement telematics for fleet management,445.77,16230.51,8,Low
+R-154,Implement telematics for fleet management,329.06,6492.2,4,Medium
+R-155,Partner with suppliers closer to manufacturing sites,270.54,17234.14,3,High
+R-156,Switch to biofuel for ocean freight,342.94,17055.95,11,Low
+R-157,Switch to biofuel for ocean freight,197.31,9969.02,6,Medium
+R-158,Use electric vehicles for short-haul deliveries,313.27,16223.38,2,High
+R-159,Switch to biofuel for ocean freight,416.93,19873.73,4,Low
+R-160,Implement renewable energy sources in warehouses,152.32,18036.37,3,Medium
+R-161,Implement telematics for fleet management,251.37,14972.84,2,Medium
+R-162,Partner with suppliers closer to manufacturing sites,292.35,7262.3,7,Medium
+R-163,Implement renewable energy sources in warehouses,396.91,5607.35,6,Medium
+R-164,Optimize trucking routes using AI algorithms,208.52,8931.5,5,Low
+R-165,Upgrade warehouse lighting to LED systems,229.67,6631.55,5,High
+R-166,Implement renewable energy sources in warehouses,104.76,12254.49,6,High
+R-167,Upgrade warehouse lighting to LED systems,246.18,10268.13,6,High
+R-168,Use electric vehicles for short-haul deliveries,249.62,10645.11,7,High
+R-169,Increase load capacity utilization,246.01,10576.91,8,Medium
+R-170,Switch to biofuel for ocean freight,322.48,15585.72,3,High
+R-171,Increase load capacity utilization,293.63,12344.96,10,Low
+R-172,Optimize trucking routes using AI algorithms,355.28,14733.16,6,High
+R-173,Implement renewable energy sources in warehouses,319.69,19692.75,7,Medium
+R-174,Enhance driver training programs for fuel efficiency,253.29,16894.93,6,Low
+R-175,Switch to biofuel for ocean freight,471.18,13588.22,10,High
+R-176,Partner with suppliers closer to manufacturing sites,424.63,5989.54,6,High
+R-177,Implement renewable energy sources in warehouses,167.17,13932.93,11,Low
+R-178,Use electric vehicles for short-haul deliveries,177.11,12421.13,6,Medium
+R-179,Optimize trucking routes using AI algorithms,405.39,17758.71,9,Low
+R-180,Adopt just-in-time inventory to reduce storage needs,139.24,8594.22,7,High
+R-181,Adopt just-in-time inventory to reduce storage needs,441.51,12698.65,10,Low
+R-182,Upgrade warehouse lighting to LED systems,409.26,19857.65,7,Low
+R-183,Increase load capacity utilization,156.61,17508.9,10,Low
+R-184,Implement renewable energy sources in warehouses,278.93,14354.49,6,High
+R-185,Implement telematics for fleet management,197.49,15382.5,9,Low
+R-186,Implement renewable energy sources in warehouses,420.06,5997.66,11,High
+R-187,Implement renewable energy sources in warehouses,219.59,14540.77,1,Low
+R-188,Increase load capacity utilization,246.0,14423.74,1,Medium
+R-189,Optimize trucking routes using AI algorithms,223.28,5906.32,8,Medium
+R-190,Optimize trucking routes using AI algorithms,499.48,18219.18,8,Medium
+R-191,Increase load capacity utilization,332.56,10829.43,10,High
+R-192,Upgrade warehouse lighting to LED systems,477.15,8080.49,3,Low
+R-193,Increase load capacity utilization,436.49,19122.28,11,Low
+R-194,Optimize trucking routes using AI algorithms,396.13,10031.72,10,High
+R-195,Implement telematics for fleet management,129.72,11251.35,1,Low
+R-196,Adopt just-in-time inventory to reduce storage needs,452.98,17650.21,3,High
+R-197,Upgrade warehouse lighting to LED systems,415.0,19427.93,8,Low
+R-198,Implement renewable energy sources in warehouses,152.29,9468.95,2,Medium
+R-199,Implement telematics for fleet management,456.98,9633.9,10,High
+R-200,Increase load capacity utilization,451.15,7505.32,3,High
+R-201,Implement telematics for fleet management,395.34,7161.76,4,Low
+R-202,Adopt just-in-time inventory to reduce storage needs,458.88,12028.69,9,Low
+R-203,Use electric vehicles for short-haul deliveries,429.57,15297.78,10,Low
+R-204,Optimize trucking routes using AI algorithms,185.55,11419.75,7,Medium
+R-205,Adopt just-in-time inventory to reduce storage needs,498.6,12595.48,11,Low
+R-206,Implement renewable energy sources in warehouses,335.24,19501.94,2,Medium
+R-207,Use electric vehicles for short-haul deliveries,340.55,9834.78,8,Medium
+R-208,Partner with suppliers closer to manufacturing sites,247.46,18563.38,4,High
+R-209,Enhance driver training programs for fuel efficiency,367.1,10155.86,6,Medium
+R-210,Upgrade warehouse lighting to LED systems,185.95,14806.51,7,Medium
+R-211,Switch to biofuel for ocean freight,419.62,9822.19,2,Low
+R-212,Use electric vehicles for short-haul deliveries,197.65,12726.93,3,Low
+R-213,Increase load capacity utilization,168.92,6092.86,4,Medium
+R-214,Switch to biofuel for ocean freight,472.15,15022.87,10,Medium
+R-215,Increase load capacity utilization,448.51,5925.98,10,Medium
+R-216,Upgrade warehouse lighting to LED systems,136.72,5183.32,6,Low
+R-217,Switch to biofuel for ocean freight,314.11,9523.91,2,Low
+R-218,Implement renewable energy sources in warehouses,246.17,7201.91,3,High
+R-219,Upgrade warehouse lighting to LED systems,232.97,8681.31,6,High
+R-220,Switch to biofuel for ocean freight,445.02,18449.6,4,Low
+R-221,Upgrade warehouse lighting to LED systems,178.54,13431.4,10,Low
+R-222,Implement renewable energy sources in warehouses,256.11,15595.91,11,Low
+R-223,Partner with suppliers closer to manufacturing sites,279.2,12146.08,8,Medium
+R-224,Use electric vehicles for short-haul deliveries,413.3,9393.88,4,High
+R-225,Optimize trucking routes using AI algorithms,141.39,15735.45,8,Low
+R-226,Enhance driver training programs for fuel efficiency,326.86,16445.92,1,Medium
+R-227,Increase load capacity utilization,481.03,12975.94,1,Low
+R-228,Partner with suppliers closer to manufacturing sites,182.17,17350.12,11,High
+R-229,Increase load capacity utilization,440.33,13899.15,11,High
+R-230,Adopt just-in-time inventory to reduce storage needs,156.64,17229.58,5,Medium
+R-231,Partner with suppliers closer to manufacturing sites,116.83,8262.92,2,High
+R-232,Adopt just-in-time inventory to reduce storage needs,160.92,10519.34,5,Low
+R-233,Use electric vehicles for short-haul deliveries,396.67,8316.99,11,High
+R-234,Optimize trucking routes using AI algorithms,431.05,12824.42,3,Medium
+R-235,Use electric vehicles for short-haul deliveries,499.66,8604.45,4,Medium
+R-236,Optimize trucking routes using AI algorithms,285.21,11541.77,10,Low
+R-237,Enhance driver training programs for fuel efficiency,226.73,19923.11,4,High
+R-238,Implement telematics for fleet management,366.14,8673.07,9,Low
+R-239,Adopt just-in-time inventory to reduce storage needs,233.09,19800.1,2,Medium
+R-240,Implement renewable energy sources in warehouses,369.7,10949.51,3,Low
+R-241,Use electric vehicles for short-haul deliveries,172.15,19040.73,1,Medium
+R-242,Adopt just-in-time inventory to reduce storage needs,215.93,17640.85,3,Medium
+R-243,Adopt just-in-time inventory to reduce storage needs,495.7,6760.99,9,Low
+R-244,Switch to biofuel for ocean freight,218.9,15624.52,6,Medium
+R-245,Switch to biofuel for ocean freight,201.23,14454.98,11,High
+R-246,Increase load capacity utilization,223.83,13444.2,11,Low
+R-247,Enhance driver training programs for fuel efficiency,301.36,7963.89,4,Medium
+R-248,Switch to biofuel for ocean freight,488.68,17558.55,5,Medium
+R-249,Implement telematics for fleet management,447.13,12408.86,3,Low
+R-250,Enhance driver training programs for fuel efficiency,324.45,8326.41,10,Medium
