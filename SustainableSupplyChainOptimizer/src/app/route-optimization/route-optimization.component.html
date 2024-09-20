@@ -1,1 +1,48 @@
-<p>route-optimization works!</p>
+<div class="row">
+    <div class="col-xl-12">
+        <app-card cardTitle="AI-generated recommendations with estimated impact" [options]="false"
+            blockClass="table-border-style" [hidHeader]="true">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Route #</th>
+                            <th>Company Name</th>
+                            <th>Total Route Distance (km)</th>
+                            <th>Optimized Route Distance (km)</th>
+                            <th>Current Emissions (mt CO2)</th>
+                            <th>Optimized Emissions (mt CO2)</th>
+                            <th>Estimated Time Saved (hrs)</th>
+                            <th>Estimated Cost Savings ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let row of routeData | slice:0:10">
+                            <td>{{ row.routeId }}</td>
+                            <td>{{ row.companyName }}</td>
+                            <td>{{ row.currentRouteDistance }}</td>
+                            <td>{{ row.optimizedRouteDistance }}</td>
+                            <td>{{ row.currentEmissions }}</td>
+                            <td>{{ row.optimizedEmissions }}</td>
+                            <td>{{ row.estimatedTimeSaved }}</td>    
+                            <td>{{ row.estimatedCostSavings }}</td>                         
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="javascript:" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="javascript:">1</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:">2</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:">Next</a>
+                  </li>
+                </ul>
+            </nav>
+        </app-card>
+    </div>
+</div>

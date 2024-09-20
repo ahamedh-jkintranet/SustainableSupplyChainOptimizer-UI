@@ -1,3 +1,48 @@
+<!-- Space between the two rows -->
+
+
+<!-- Trend Line of Carbon Emission and Bar Chart (Bottom Row) -->
+<div class="row">
+    <!-- Trend Line of Carbon Emission -->
+    <div class="col-6">
+        <div class="card mt-4 h-100">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h6 class="title">Trend Line of Carbon Emission</h6>
+                    </div>
+                    <div class="col-12">
+                        <apx-chart [dataLabels]="line1CAC.dataLabels!" [chart]="line1CAC.chart!"
+                            [stroke]="line1CAC.stroke!" [colors]="line1CAC.colors!" [series]="line1CAC.series!"
+                            [title]="line1CAC.title!" [grid]="line1CAC.grid!" [xaxis]="line1CAC.xaxis!"></apx-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bar Chart of Carbon Emission -->
+    <div class="col-6">
+        <div class="card mt-4 h-100">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h6 class="title">Bar Chart Carbon Emission</h6>
+                    </div>
+                    <div class="col-12">
+                        <apx-chart [dataLabels]="bar1CAC.dataLabels!" [chart]="bar1CAC.chart!"
+                            [plotOptions]="bar1CAC.plotOptions!" [stroke]="bar1CAC.stroke!" [colors]="bar1CAC.colors!"
+                            [series]="bar1CAC.series!" [tooltip]="bar1CAC.tooltip!" [xaxis]="bar1CAC.xaxis!"
+                            [yaxis]="bar1CAC.yaxis!" [fill]="bar1CAC.fill!"></apx-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mt-4"></div>
+<!-- -->
+
 <div class="row justify-content-between">
     <!-- Carbon Emission Card -->
     <div class="col-6">
@@ -8,14 +53,10 @@
                         <h6 class="title">Carbon Emission</h6>
                     </div>
                     <div class="col-12">
-                        <apx-chart
-                            [plotOptions]="radialBar1CAC.plotOptions!"
-                            [chart]="radialBar1CAC.chart!"
-                            [dataLabels]="radialBar1CAC.dataLabels!"
-                            [series]="radialBar1CAC.series!"
-                            [colors]="radialBar1CAC.colors!"
-                            [legend]="radialBar1CAC.legend!"
-                        ></apx-chart>
+                        <apx-chart [plotOptions]="radialBar1CAC.plotOptions!" [chart]="radialBar1CAC.chart!"
+                            [dataLabels]="radialBar1CAC.dataLabels!" [series]="radialBar1CAC.series!"
+                            [colors]="radialBar1CAC.colors!" [labels]="radialBar1CAC.labels"
+                            [legend]="radialBar1CAC.legend!"></apx-chart>
                     </div>
                 </div>
             </div>
@@ -33,65 +74,8 @@
                 </div>
                 <div class="row flex-grow-1 d-flex justify-content-center align-items-center">
                     <div class="col-12 text-center">
-                        <ngb-progressbar type="success" [value]="sustainabilityGoalProgress" class="prog">{{ sustainabilityGoalProgress }} %</ngb-progressbar>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Space between the two rows -->
-<div class="mt-4"></div>
-
-<!-- Trend Line of Carbon Emission and Bar Chart (Bottom Row) -->
-<div class="row">
-    <!-- Trend Line of Carbon Emission -->
-    <div class="col-6">
-        <div class="card mt-4 h-100">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h6 class="title">Trend Line of Carbon Emission</h6>
-                    </div>
-                    <div class="col-12">
-                        <apx-chart
-                            [dataLabels]="line1CAC.dataLabels!"
-                            [chart]="line1CAC.chart!"
-                            [stroke]="line1CAC.stroke!"
-                            [colors]="line1CAC.colors!"
-                            [series]="line1CAC.series!"
-                            [title]="line1CAC.title!"
-                            [grid]="line1CAC.grid!"
-                            [xaxis]="line1CAC.xaxis!"
-                        ></apx-chart>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bar Chart of Carbon Emission -->
-    <div class="col-6">
-        <div class="card mt-4 h-100">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h6 class="title">Bar Chart Carbon Emission</h6>
-                    </div>
-                    <div class="col-12">
-                        <apx-chart
-                            [dataLabels]="bar1CAC.dataLabels!"
-                            [chart]="bar1CAC.chart!"
-                            [plotOptions]="bar1CAC.plotOptions!"
-                            [stroke]="bar1CAC.stroke!"
-                            [colors]="bar1CAC.colors!"
-                            [series]="bar1CAC.series!"
-                            [tooltip]="bar1CAC.tooltip!"
-                            [xaxis]="bar1CAC.xaxis!"
-                            [yaxis]="bar1CAC.yaxis!"
-                            [fill]="bar1CAC.fill!"
-                        ></apx-chart>
+                        <ngb-progressbar type="success" [value]="sustainabilityGoalProgress" class="prog">{{
+                            sustainabilityGoalProgress }} %</ngb-progressbar>
                     </div>
                 </div>
             </div>

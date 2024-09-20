@@ -1490,7 +1490,7 @@ export class ChartDB {
     },
     series: [
       {
-        name: 'Series 1',
+        name: 'Carbon Emission',
         data: [20, 100, 40, 30, 50, 80, 33]
       }
     ],
@@ -1547,7 +1547,7 @@ export class ChartDB {
     },
     series: [
       {
-        name: 'Series 1',
+        name: 'Carbon Emission',
         data: [80, 50, 30, 40, 100, 20]
       },
       {
