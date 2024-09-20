@@ -1,1 +1,46 @@
-<p>supplier-evaluation works!</p>
+<div class="row">
+    <div class="col-xl-12">
+        <app-card cardTitle="AI-generated recommendations with estimated impact" [options]="false"
+            blockClass="table-border-style" [hidHeader]="true">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Supplier Name</th>
+                            <th>Sustainability Score</th>
+                            <th>Cost Per Unit</th>
+                            <th>Compliance Certifications</th>
+                            <th>Country</th>
+                            <th>Risk Assessment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let row of supplierData | slice:0:5">
+                            <td>{{ row.supplierId }}</td>
+                            <td>{{ row.supplierName }}</td>
+                            <td>{{ row.sustainabilityScore }}</td>
+                            <td>{{ row.costPerUnit }}</td>
+                            <td>{{ row.complianceCertifications }}</td>
+                            <td>{{ row.country }}</td>
+                            <td>{{ row.riskAssessment }}</td>                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="javascript:" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="javascript:">1</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:">2</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:">Next</a>
+                  </li>
+                </ul>
+            </nav>
+        </app-card>
+    </div>
+</div>
