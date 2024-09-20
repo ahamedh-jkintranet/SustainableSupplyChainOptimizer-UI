@@ -1,3 +1,23 @@
-.prog{
-    height: 200%;
+/* Ensures consistent title height */
+.title {
+    min-height: 40px; /* Keeps titles at the same height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Keeps progress bar in the middle */
+.prog {
+    width: 80%; /* Adjust the width as needed */
+    height: 30px; /* Controls the height of the progress bar */
+}
+
+/* Space between rows */
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+/* Keeps the card size consistent */
+.card {
+    min-height: 350px; /* Adjust this for uniform card height */
 }
