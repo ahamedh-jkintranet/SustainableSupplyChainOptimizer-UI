@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-xl-12">
-        <app-card cardTitle="Decision Support - Recommendations" [options]="false"
-        blockClass="text-center" [hidHeader]="false">
+        <app-card cardTitle="Decision Support - Recommendations" [options]="false" blockClass="text-center"
+            [hidHeader]="false">
             <div class="table-responsive">
                 <table class="table">
                     <thead>
@@ -16,7 +16,7 @@
                     </thead>
                     <tbody>
                         <tr *ngFor="let row of csvData | slice:((pageNo*pageSize)-pageSize):(pageNo*pageSize)"
-                        [ngClass]="{
+                            [ngClass]="{
                             'table-danger': row['Priority_Level'] === 'High',
                             'table-warning': row['Priority_Level'] === 'Medium',
                             '': row['Priority_Level'] === 'Low'
@@ -72,7 +72,7 @@
 
                 </app-card>
             </div>
-
+            <!--
             <div class="row">
                 <div class="col-md-6">
                     <form action="javascript:">
@@ -89,6 +89,26 @@
                             <button (click)="sendMessage()" class="btn btn-primary">Ask</button>
                         </div>
                     </form>
+                </div>
+            </div>-->
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="h-list-footer">
+                        <div class="input-group" (focusout)="this.message_error = false">
+                            <input type="file" class="chat-attach" style="display: none" />
+                            <a href="javascript:" class="input-group-prepend btn btn-success btn-attach"
+                                [ngClass]="{ 'btn-danger': message_error === true }">
+                                <i class="feather icon-paperclip"></i>
+                            </a>
+                            <input type="text" [(ngModel)]="newMessage" name="h-chat-text" class="form-control h-send-chat"
+                                placeholder="Type a message . . . " (keyup.enter)="sendMessage()" />
+                            <button class="input-group-append btn-send btn btn-primary"
+                                [ngClass]="{ 'btn-danger': message_error === true }" (click)="sendMessage()">
+                                <i class="feather icon-message-circle"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </app-card>

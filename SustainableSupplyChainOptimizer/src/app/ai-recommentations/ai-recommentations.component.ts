@@ -45,6 +45,8 @@ export class AiRecommentationsComponent implements OnInit {
   pageNo:number=1;
   pageSize:number=5;
   NoOfPages:number=10;
+  message_error=false;
+  message:string;
 
   sendMessage() {
     if (this.newMessage.trim()) {
