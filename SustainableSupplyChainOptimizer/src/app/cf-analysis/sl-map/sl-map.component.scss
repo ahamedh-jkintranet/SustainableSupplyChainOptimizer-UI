@@ -9,6 +9,10 @@
         box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
     }
 
+    .svg-menu__path__seleccion {
+        background-color: blue;
+    }
+
     // .svg-menu {
     //     width: 1000px !important;
     //     height: 1000px !important;
@@ -39,4 +43,6 @@
     .svg-menu__path__seleccion.active .svg-menu__path__seleccion__background * {
         opacity: 0.5;
     }
+
+
 }
