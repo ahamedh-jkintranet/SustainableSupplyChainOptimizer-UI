@@ -7,12 +7,12 @@ import { ChartDB } from 'src/app/fack-db/chartData';
 import { ApexOptions, NgApexchartsModule } from 'ng-apexcharts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardSustainability } from './models/dashboard-sustainability.model';
-import {DashboardCarbonEmission} from './models/dashboard-carbon.model';
+import { DashboardCarbonEmission } from './models/dashboard-carbon.model';
 
 @Component({
   selector: 'app-dashboard-home',
   standalone: true,
-  imports: [NgApexchartsModule,NgbModule],
+  imports: [NgApexchartsModule, NgbModule],
   templateUrl: './dashboard-home.component.html',
   styleUrl: './dashboard-home.component.scss',
 })
@@ -20,22 +20,22 @@ import {DashboardCarbonEmission} from './models/dashboard-carbon.model';
 export class DashboardHomeComponent {
   profiles: DashboardHome[] = [];
   carbonEmission: number = 0;
-  sustainabilityGoalProgress : number = 0;
+  sustainabilityGoalProgress: number = 0;
 
   line1CAC!: ApexOptions;
   bar1CAC!: ApexOptions;
   radialBar1CAC!: ApexOptions;
 
-  constructor(private dashboardService: DashboardService) {}
+  constructor(private dashboardService: DashboardService) { }
 
   ngOnInit(): void {
-   
+
     //Gauge 
 
     this.dashboardService.getDashboardTrendLineChart().subscribe(
       (data: number) => {
         this.carbonEmission = data;
-    
+
         this.radialBar1CAC = {
           chart: {
             height: 350,
@@ -52,20 +52,21 @@ export class DashboardHomeComponent {
             }
           },
           colors: ['#20b566'],
-          series: [data], 
+          series: [data],
           labels: ['Carbon Emission']
+
         };
-    
+
       },
       (error) => console.error('Error fetching dashboard profiles:', error),
-  );
+    );
 
     this.dashboardService.getDashboardSustainabilityChart().subscribe(
       (data: number) => {
-          this.sustainabilityGoalProgress = data; 
+        this.sustainabilityGoalProgress = data;
       },
       (error) => console.error('Error fetching dashboard profiles:', error),
-  );
+    );
 
     // TrendLine of Carbon Emission & Cost Analysis Chart : 1 API : GetDashboardDataList
 
@@ -95,7 +96,7 @@ export class DashboardHomeComponent {
           this.bar1CAC.xaxis = {
             categories: this.profiles.map((s) => s.firstMonth),
           };
-        
+
         }
       },
       (error) => console.error('Error fetching dashboard profiles:', error),
@@ -120,7 +121,7 @@ export class DashboardHomeComponent {
       series: [
         {
           name: 'Carbon Emission',
-          data: [10, 41, 35, 51, 49, 62, 69, 91, 148,10,10,10],
+          data: [10, 41, 35, 51, 49, 62, 69, 91, 148, 10, 10, 10],
         },
       ],
       title: {
@@ -129,7 +130,7 @@ export class DashboardHomeComponent {
       },
       grid: {
         row: {
-          colors: ['#f3f6ff', 'transparent'], 
+          colors: ['#f3f6ff', 'transparent'],
           opacity: 0.5,
         },
       },
@@ -213,8 +214,8 @@ export class DashboardHomeComponent {
     //   series: [70],
     //   labels: ['Cricket']
     // };
-    
+
   }
 
-  
+
 }
