@@ -23,6 +23,9 @@ import { NavCollapseComponent } from './theme/layout/admin/navigation/nav-conten
 import { NavGroupComponent } from './theme/layout/admin/navigation/nav-content/nav-group/nav-group.component';
 import { NavItemComponent } from './theme/layout/admin/navigation/nav-content/nav-item/nav-item.component';
 import { SharedModule } from './theme/shared/shared.module';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { SlMapComponent } from './cf-analysis/sl-map/sl-map.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -43,8 +46,16 @@ import { SharedModule } from './theme/shared/shared.module';
     NavCollapseComponent,
     NavGroupComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    NgApexchartsModule,
+    AppRoutingModule,
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule
+  ],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

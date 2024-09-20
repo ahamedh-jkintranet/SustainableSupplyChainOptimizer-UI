@@ -29,7 +29,7 @@
     "apexcharts": "^3.49.2",
     "bootstrap": "^5.3.3",
     "hammerjs": "^2.0.8",
-    "jquery": "^3.7.1",
+    "jquery": "^2.2.4",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
     "mousetrap": "^1.6.5",
