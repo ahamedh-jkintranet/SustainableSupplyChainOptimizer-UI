@@ -30,42 +30,42 @@ export const NavigationItems: NavigationItem[] = [
         title: 'Dashboard',
         type: 'item',
         url: '/home',
-        icon: 'feather icon-home'
+        icon: 'feather icon-airplay'
       },
       {
         id: 'cf-analysis',
         title: 'CF Analysis',
         type: 'item',
         url: '/cf-analysis',
-        icon: 'feather icon-home'
+        icon: 'feather icon-settings'
       },
       {
         id: 'ai-recommendation',
         title: 'AI Recommendations',
         type: 'item',
         url: '/ai-recommendations',
-        icon: 'feather icon-home'
+        icon: 'feather icon-cpu'
       },
       {
         id: 'predictive-analytics',
-        title: 'Predictive Analytic',
+        title: 'Predictive Analytics',
         type: 'item',
         url: '/predictive-analytic',
-        icon: 'feather icon-home'
+        icon: 'feather icon-pie-chart'
       },
       {
         id: 'supplier-evaluation',
         title: 'Supplier Evaluation',
         type: 'item',
         url: '/supplier-evaluation',
-        icon: 'feather icon-home'
+        icon: 'feather icon-book'
       },
       {
         id: 'route-optimization',
         title: 'Route Optimization',
         type: 'item',
         url: '/route-optimization',
-        icon: 'feather icon-home'
+        icon: 'feather icon-map-pin'
       }
     ]
   },
