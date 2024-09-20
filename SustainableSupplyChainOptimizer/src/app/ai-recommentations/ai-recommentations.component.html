@@ -1,12 +1,12 @@
 <div class="row">
     <div class="col-xl-12">
-        <app-card cardTitle="AI-generated recommendations with estimated impact" [options]="false"
-            blockClass="table-border-style" [hidHeader]="true">
+        <app-card cardTitle="Decision Support - Recommendations" [options]="false" blockClass="text-center"
+            [hidHeader]="false">
             <div class="table-responsive">
                 <table class="table">
                     <thead>
-                        <tr>
-                            <th>#</th>
+                        <tr class="table-info">
+                            <th style="width: 70px;">#</th>
                             <th>Recommendation</th>
                             <th>Estimated Emmission Reduction</th>
                             <th>Estimated Cost Savings</th>
@@ -15,104 +15,71 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let row of csvData | slice:0:5">
+                        <tr *ngFor="let row of csvData | slice:((pageNo*pageSize)-pageSize):(pageNo*pageSize)"
+                            [ngClass]="{
+                            'table-danger': row['Priority_Level'] === 'High',
+                            'table-warning': row['Priority_Level'] === 'Medium',
+                            '': row['Priority_Level'] === 'Low'
+                          }">
                             <td *ngFor="let header of headers">{{ row[header] }}</td>
                         </tr>
-                        <!--
-                        <tr class="table-active">
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>&#64;mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>&#64;fat</td>
-                        </tr>
-                        <tr class="table-success">
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>&#64;twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>&#64;twitter</td>
-                        </tr>
-                        <tr class="table-warning">
-                            <th scope="row">5</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>&#64;twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>&#64;twitter</td>
-                        </tr>
-                        <tr class="table-danger">
-                            <th scope="row">7</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>&#64;twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">8</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>&#64;twitter</td>
-                        </tr>
-                        <tr class="table-info">
-                            <th scope="row">9</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>&#64;twitter</td>
-                        </tr> -->
                     </tbody>
                 </table>
             </div>
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-end">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="javascript:" tabindex="-1">Previous</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="javascript:">1</a></li>
-                  <li class="page-item"><a class="page-link" href="javascript:">2</a></li>
-                  <li class="page-item"><a class="page-link" href="javascript:">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="javascript:">Next</a>
-                  </li>
+                    <li class="page-item disabled" *ngIf="pageNo==1"><a class="page-link" href="javascript:"
+                            tabindex="-1" (click)="previousPage()">Previous</a></li>
+                    <li class="page-item" *ngIf="pageNo>1"><a class="page-link" href="javascript:" tabindex="-1"
+                            (click)="previousPage()">Previous</a></li>
+
+                    <li class="page-item"><a class="page-link" href="javascript:" (click)="gotoPage(1)">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:" (click)="gotoPage(2)">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:" (click)="gotoPage(3)">3</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:" (click)="gotoPage(4)">4</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:" (click)="gotoPage(5)">5</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:" (click)="gotoPage(6)">6</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:" (click)="gotoPage(7)">7</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:" (click)="gotoPage(8)">8</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:" (click)="gotoPage(9)">9</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:" (click)="gotoPage(10)">10</a></li>
+                    <li class="page-item disabled" *ngIf="pageNo>=10">
+                        <a class="page-link" href="javascript:" (click)="nextPage()">Next</a>
+                    </li>
+                    <li class="page-item" *ngIf="pageNo<10">
+                        <a class="page-link" href="javascript:" (click)="nextPage()">Next</a>
+                    </li>
                 </ul>
-              </nav>
+            </nav>
         </app-card>
     </div>
 
     <div class="col-xl-12">
-        <app-card cardTitle="Co Pilot Chat" [options]="false" blockClass="table-border-style" >
+        <app-card cardTitle="Co Pilot Chat" [options]="false" blockClass="table-border-style">
             <div class="row">
                 <app-card cardTitle="" [hidHeader]="true" blockClass="table-border-style" *ngIf="messages.length!=0">
                     <div class="message" *ngFor="let message of messages" style="margin-bottom: 10px;">
-                        <img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image" style="height: 35px; margin-right: 10px;" *ngIf="message.user=='Me'"/>
-                        <img class="img-radius" src="assets/images/user/OIG2.jpg" alt="Generic placeholder image" style="height: 35px; margin-right: 10px;" *ngIf="message.user=='AI'"/>
+                        <img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image"
+                            style="height: 35px; margin-right: 10px;" *ngIf="message.user=='Me'" />
+                        <img class="img-radius" src="assets/images/user/OIG2.jpg" alt="Generic placeholder image"
+                            style="height: 35px; margin-right: 10px;" *ngIf="message.user=='AI'" />
                         <span class="user" style="font-weight: bold;">{{ message.user }} : </span>
                         <span class="content">{{ message.content }}</span>
                     </div>
 
-                    <img class="img-radius" *ngIf="isChatLoading==true" src="assets/images/progress.gif" style="height: 60px;"/>
+                    <img class="img-radius" *ngIf="isChatLoading==true" src="assets/images/progress.gif"
+                        style="height: 60px;" />
 
                 </app-card>
             </div>
-
+            <!--
             <div class="row">
                 <div class="col-md-6">
                     <form action="javascript:">
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" [(ngModel)]="newMessage" [ngModelOptions]="{standalone: true}" placeholder="Type a message..." (keyup.enter)="sendMessage()"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
+                                [(ngModel)]="newMessage" [ngModelOptions]="{standalone: true}"
+                                placeholder="Type a message..." (keyup.enter)="sendMessage()"></textarea>
                         </div>
                     </form>
                 </div>
@@ -122,6 +89,26 @@
                             <button (click)="sendMessage()" class="btn btn-primary">Ask</button>
                         </div>
                     </form>
+                </div>
+            </div>-->
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="h-list-footer">
+                        <div class="input-group" (focusout)="this.message_error = false">
+                            <input type="file" class="chat-attach" style="display: none" />
+                            <a href="javascript:" class="input-group-prepend btn btn-success btn-attach"
+                                [ngClass]="{ 'btn-danger': message_error === true }">
+                                <i class="feather icon-paperclip"></i>
+                            </a>
+                            <input type="text" [(ngModel)]="newMessage" name="h-chat-text" class="form-control h-send-chat"
+                                placeholder="Type a message . . . " (keyup.enter)="sendMessage()" />
+                            <button class="input-group-append btn-send btn btn-primary"
+                                [ngClass]="{ 'btn-danger': message_error === true }" (click)="sendMessage()">
+                                <i class="feather icon-message-circle"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </app-card>

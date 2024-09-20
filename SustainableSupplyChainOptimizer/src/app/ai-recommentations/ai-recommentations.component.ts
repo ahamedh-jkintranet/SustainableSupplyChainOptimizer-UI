@@ -42,6 +42,11 @@ export class AiRecommentationsComponent implements OnInit {
   messages: Message[] = [];
   newMessage: string = '';
   isChatLoading: boolean=false;
+  pageNo:number=1;
+  pageSize:number=5;
+  NoOfPages:number=10;
+  message_error=false;
+  message:string;
 
   sendMessage() {
     if (this.newMessage.trim()) {
@@ -67,6 +72,18 @@ export class AiRecommentationsComponent implements OnInit {
         this.isChatLoading=false;
       }
     );
+  }
+
+  nextPage(): void{
+    this.pageNo=this.pageNo+1;
+  }
+
+  previousPage(): void{
+    this.pageNo=this.pageNo-1;
+  }
+
+  gotoPage(page:number): void{
+    this.pageNo=page;
   }
 
   showMessage(msg:string, user:string): void {

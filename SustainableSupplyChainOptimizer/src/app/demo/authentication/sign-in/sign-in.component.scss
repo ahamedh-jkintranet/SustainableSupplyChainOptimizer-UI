@@ -1,0 +1,19 @@
+.btn-outline-dark {
+    border: 1px solid transparent; /* Optional: make the border transparent */
+  }
+  
+  .btn-outline-dark:hover {
+    background-color: transparent; /* Remove the background color on hover */
+    border-color: transparent; /* Remove the border color on hover */
+    box-shadow: none; /* Remove any shadow if present */
+  }
+
+  .btn-outline-primary {
+    border: 1px solid transparent; /* Optional: make the border transparent */
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: transparent; /* Remove the background color on hover */
+    border-color: transparent; /* Remove the border color on hover */
+    box-shadow: none; /* Remove any shadow if present */
+  }
