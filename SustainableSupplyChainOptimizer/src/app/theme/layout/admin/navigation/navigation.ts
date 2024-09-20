@@ -48,7 +48,7 @@ export const NavigationItems: NavigationItem[] = [
       },
       {
         id: 'predictive-analytics',
-        title: 'Predictive Analytic',
+        title: 'Predictive Analytics',
         type: 'item',
         url: '/predictive-analytic',
         icon: 'feather icon-pie-chart'
