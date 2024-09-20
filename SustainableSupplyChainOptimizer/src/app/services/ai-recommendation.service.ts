@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AiRecommendationService {
 
-  private apiUrl = 'http://104.43.94.148:8080/api/prompt';
+  private apiUrl = 'https://artisansforkids.com/api/prompt';
 
   constructor(private http: HttpClient) { }
 

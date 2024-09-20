@@ -97,8 +97,8 @@
             <div class="row">
                 <app-card cardTitle="" [hidHeader]="true" blockClass="table-border-style" *ngIf="messages.length!=0">
                     <div class="message" *ngFor="let message of messages" style="margin-bottom: 10px;">
-                        <img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image" style="height: 40px; margin-right: 10px;" *ngIf="message.user=='Me'"/>
-                        <img class="img-radius" src="assets/images/user/OIG2.jpg" alt="Generic placeholder image" style="height: 40px; margin-right: 10px;" *ngIf="message.user=='AI'"/>
+                        <img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image" style="height: 35px; margin-right: 10px;" *ngIf="message.user=='Me'"/>
+                        <img class="img-radius" src="assets/images/user/OIG2.jpg" alt="Generic placeholder image" style="height: 35px; margin-right: 10px;" *ngIf="message.user=='AI'"/>
                         <span class="user" style="font-weight: bold;">{{ message.user }} : </span>
                         <span class="content">{{ message.content }}</span>
                     </div>
