@@ -30,7 +30,6 @@ import { CsvParserService } from './services/csv-parser.service';
 import { AiRecommendationService } from './services/ai-recommendation.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgApexchartsModule } from 'ng-apexcharts';
-import { SlMapComponent } from './cf-analysis/sl-map/sl-map.component';
 
 @NgModule({
   declarations: [

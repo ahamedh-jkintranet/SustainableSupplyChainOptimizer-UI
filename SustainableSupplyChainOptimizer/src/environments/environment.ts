@@ -7,7 +7,7 @@ import packageInfo from '../../package.json';
 export const environment = {
   appVersion: packageInfo.version,
   production: false,
-  apiUrl: 'https://localhost:44367'
+  apiUrl: 'https://jkh-carbon-footprint-analysis-backend-h6fedubgeyczexdp.southeastasia-01.azurewebsites.net'
 };
 
 /*
