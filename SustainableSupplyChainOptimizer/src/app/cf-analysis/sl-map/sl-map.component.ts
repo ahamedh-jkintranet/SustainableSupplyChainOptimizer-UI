@@ -51,11 +51,11 @@ export class SlMapComponent {
     this.emissionsByDistrict = sortedData.map((item, index) => {
       let color;
       if (index < segmentLength) {
-        color = 'red'; // highest values
+        color = { class: 'text-danger', text: 'High' }; // highest values
       } else if (index < segmentLength * 2) {
-        color = 'yellow'; // medium values
+        color = { class: 'text-warning', text: 'Moderate' }; // highest values
       } else {
-        color = 'green'; // lowest values
+        color = { class: 'text-success', text: 'Low' }; // highest values
       }
 
       return { ...item, color };
@@ -69,10 +69,11 @@ export class SlMapComponent {
     let emission = this.emissionsByDistrict.find(x => x.key == text)
     let tooltip = document.getElementById("tooltip");
     tooltip.innerHTML = ` 
-      <div class="p-4 text-start">
+    <div class="p-4 text-start">
        <h6>District : <b class='font-weight-bold'>${text}</b></h6>
 
        <h6>Total Emission : <b class='font-weight-bold'>${emission.value}</b></h6>
+       <h6>Intensity : <b class='font-weight-bold ${emission.color.class}'>${emission.color.text}</b></h6>
     </div>
     `;
     tooltip.style.display = "block";
