@@ -29,6 +29,8 @@ import { provideHttpClient } from '@angular/common/http';
 import { CsvParserService } from './services/csv-parser.service';
 import { AiRecommendationService } from './services/ai-recommendation.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { SlMapComponent } from './cf-analysis/sl-map/sl-map.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
+    NgApexchartsModule,
     AppRoutingModule,
     SharedModule,
     FormsModule,
@@ -59,7 +62,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     DashboardHomeComponent,
     NgbModule
   ],
-  providers: [provideHttpClient(),CsvParserService, AiRecommendationService],
+  providers: [provideHttpClient(), CsvParserService, AiRecommendationService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

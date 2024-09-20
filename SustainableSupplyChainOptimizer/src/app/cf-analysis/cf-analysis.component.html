@@ -1,1 +1,55 @@
-<p>cf-analysis works!</p>
+<div class="row justify-content-end">
+    <div class="col-auto">
+        <label for="startDate">Start</label>
+        <input id="startDate" class="form-control" type="date" />
+    </div>
+    <div class="col-auto">
+        <label for="endDate">End</label>
+        <input id="endDate" class="form-control" type="date" />
+    </div>
+</div>
+<div class="card mt-4">
+    <div class="card-body">
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <h6>Carbon Footprint analysis by Stacked Bar Chart</h6>
+            </div>
+            <div class="col-12">
+                <apx-chart [dataLabels]="barChart.dataLabels!" [chart]="barChart.chart!"
+                    [plotOptions]="barChart.plotOptions!" [stroke]="barChart.stroke!" [colors]="barChart.colors!"
+                    [series]="barChart.series!" [tooltip]="barChart.tooltip!" [xaxis]="barChart.xaxis!"
+                    [yaxis]="barChart.yaxis!" [fill]="barChart.fill!"></apx-chart>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="row mt-4">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h6>Carbon Footprint intensity by geography</h6>
+                    </div>
+                    <div class="col-12 text-center">
+                        <app-sl-map></app-sl-map>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row ">
+                    <div class="col-12 text-center">
+                        <h6>Percentage of Total</h6>
+                    </div>
+                    <div class="col-12 mt-4 text-center">
+                        <apx-chart [labels]="pieChart.labels!" [chart]="pieChart.chart!"
+                            [dataLabels]="pieChart.dataLabels!" [series]="pieChart.series!" [colors]="pieChart.colors!"
+                            [responsive]="pieChart.responsive!" [legend]="pieChart.legend!"></apx-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
