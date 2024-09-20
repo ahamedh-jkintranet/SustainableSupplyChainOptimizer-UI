@@ -21,14 +21,14 @@ export class DashboardService {
 
   constructor(private http: HttpClient) {}
 
-  //Gauge
+   //Line Charts
   getDashboardProfile(): Observable<any> {
     return this.http.get<any>(this.apiUrl);
   }
  
-  //Line Charts
-   getDashboardTrendLineChart(): Observable<any> {
-    return this.http.get<any>(this.carbonEmissionApiUrl);
+  //Gauge
+   getDashboardTrendLineChart(): Observable<number> {
+    return this.http.get<number>(this.carbonEmissionApiUrl);
   }
 
   //Progressbar

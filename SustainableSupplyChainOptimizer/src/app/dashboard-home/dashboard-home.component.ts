@@ -1,6 +1,4 @@
 import { AfterViewInit, Component } from '@angular/core';
-// import { NgxGaugeModule } from 'ngx-gauge';
-// import { NgxGaugeType } from 'ngx-gauge/gauge/gauge';
 import { DashboardService } from './dashboard.service';
 import { DashboardHome } from './models/dashboard-home.model';
 import { HttpClient } from '@angular/common/http';
@@ -9,6 +7,7 @@ import { ChartDB } from 'src/app/fack-db/chartData';
 import { ApexOptions, NgApexchartsModule } from 'ng-apexcharts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardSustainability } from './models/dashboard-sustainability.model';
+import {DashboardCarbonEmission} from './models/dashboard-carbon.model';
 
 @Component({
   selector: 'app-dashboard-home',
@@ -25,27 +24,45 @@ export class DashboardHomeComponent {
 
   line1CAC!: ApexOptions;
   bar1CAC!: ApexOptions;
+  radialBar1CAC!: ApexOptions;
 
   constructor(private dashboardService: DashboardService) {}
 
   ngOnInit(): void {
    
-    //Gauge - Need to change.This is a incorrect API
+    //Gauge 
 
-    // this.dashboardService.getDashboardProfile().subscribe(
-    //   (data: DashboardHome[]) => {
-    //     console.log(data);
-    //     this.profiles = data;
-    //     if (this.profiles.length > 0) {
-    //       this.carbonEmission = -50; //this.profiles[this.profiles.length - 1].sustainabilityGoalProgress;
-    //     }
-    //   },
-    //   error => console.error('Error fetching dashboard profiles:', error)
-    // );
+    this.dashboardService.getDashboardTrendLineChart().subscribe(
+      (data: number) => {
+        this.carbonEmission = data;
+    
+        this.radialBar1CAC = {
+          chart: {
+            height: 350,
+            type: 'radialBar'
+          },
+          dataLabels: {
+            enabled: false
+          },
+          plotOptions: {
+            radialBar: {
+              hollow: {
+                size: '70%'
+              }
+            }
+          },
+          colors: ['#20b566'],
+          series: [data], 
+          labels: ['Carbon Emission']
+        };
+    
+      },
+      (error) => console.error('Error fetching dashboard profiles:', error),
+  );
 
     this.dashboardService.getDashboardSustainabilityChart().subscribe(
       (data: number) => {
-          this.sustainabilityGoalProgress = data;  // Directly assign the value
+          this.sustainabilityGoalProgress = data; 
       },
       (error) => console.error('Error fetching dashboard profiles:', error),
   );
@@ -86,7 +103,7 @@ export class DashboardHomeComponent {
 
     this.line1CAC = {
       chart: {
-        height: 500,
+        height: 450,
         type: 'line',
         zoom: {
           enabled: true,
@@ -107,7 +124,7 @@ export class DashboardHomeComponent {
         },
       ],
       title: {
-        text: 'Trend Line of Carbon Emission',
+        text: '',
         align: 'center',
       },
       grid: {
@@ -136,7 +153,7 @@ export class DashboardHomeComponent {
 
     this.bar1CAC = {
       chart: {
-        height: 425,
+        height: 450,
         type: 'bar'
       },
       plotOptions: {
@@ -172,37 +189,32 @@ export class DashboardHomeComponent {
         opacity: 1
       },
       tooltip: {
-        // y: {
-        //   formatter: (val: string) => '$ ' + val + ' thousands'
-        // }
+
       }
     };
 
+
+    // this.radialBar1CAC = {
+    //   chart: {
+    //     height: 350,
+    //     type: 'radialBar'
+    //   },
+    //   dataLabels: {
+    //     enabled: false
+    //   },
+    //   plotOptions: {
+    //     radialBar: {
+    //       hollow: {
+    //         size: '70%'
+    //       }
+    //     }
+    //   },
+    //   colors: ['#4099ff'],
+    //   series: [70],
+    //   labels: ['Cricket']
+    // };
     
   }
-
-  // Sustainability Goal Progress : 1 API
-
-  thresholdConfig = {
-    '-100': { color: 'green' }, // Color for -100 to 0%
-    '0': { color: 'yellow' }, // Color for 0 to 33%
-    '33': { color: 'orange' }, // Color for 33% to 66%
-    '66': { color: 'red' }, // Color for 67% to 100%
-  };
-
-  markerConfig = [
-    { value: -100, color: '#555', size: 8, label: '-100', type: 'line' },
-    { value: -50, color: '#555', size: 4, type: 'line' },
-    { value: 0, color: '#555', size: 8, label: '0', type: 'line' },
-    { value: 15, color: '#555', size: 4, type: 'line' },
-    { value: 30, color: '#555', size: 8, label: '30', type: 'line' },
-    { value: 40, color: '#555', size: 4, type: 'line' },
-    { value: 50, color: '#555', size: 8, label: '50', type: 'line' },
-    { value: 60, color: '#555', size: 4, type: 'line' },
-    { value: 70, color: '#555', size: 8, label: '70', type: 'line' },
-    { value: 85, color: '#555', size: 4, type: 'line' },
-    { value: 100, color: '#555', size: 8, label: '100', type: 'line' },
-  ];
 
   
 }
